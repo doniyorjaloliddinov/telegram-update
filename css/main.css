@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*, *::after , *::before {
+    box-sizing: inherit;
+}
+
+body  {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "OpenSans" sans-serif, "Raleway";
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;      
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/source-sans-pro-v19-latin-regular.woff2") format("woff2"), 
+         url("../fonts/source-sans-pro-v19-latin-regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url("../fonts/source-sans-pro-v19-latin-600.woff2") format("woff2"), 
+         url("../fonts/source-sans-pro-v19-latin-600.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url("../fonts/source-sans-pro-v19-latin-700.woff2") format("woff2"),
+         url("../fonts/source-sans-pro-v19-latin-700.woff") format("woff"); 
+  }
+
+
+/* HEADER   */
+.header {
+    background-color: #fff;
+}
+
+.header__input {
+    background-color: #F4F4F4;
+    outline: none;
+}
+
+.header__close {
+    color: #2481CC;
+}
+
+.header__edit {
+    position: relative;
+}
+
+
+.header__edit::before {
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/search.svg");
+    position: absolute;
+    top: 5px;
+}
+/* /HEADER/   */
+
+
+/* MEMBERS */
+.main {
+    margin-top: 55px;
+    margin-bottom: 65px;
+}
+
+.member__list {
+    background-color: #F4F4F4;
+}
+
+.members__item {
+    padding: 8px;
+}
+
+.members__img {
+    width: 50px;
+    height: 50px;
+}
+
+.members__content {
+    width: 180px;
+}
+
+.members__pinned-img {
+    margin-bottom: 15px;
+}
+/* /MEMBERS/ */
+
+
+/* MESSAGE */
+.message__item--big {
+    margin-top: 15px;
+    margin-left: 60px;
+    padding-left: 8px;
+    border-left: 4px solid #2481CC;
+}
+/* MESSAGE */
+
+
+/* FOOTER */
+.footer {
+    padding-top: 20px;
+    padding-left: 15px;
+    background-color: #fff;
+    border-top: 1px solid #999999;
+}
+
+.navigation-list {
+    padding-top: 8px;
+}
+/* FOOTER */
+
+@media only screen and (max-width: 1052px) {
+  .header__btn {
+      display: none;
+  }
+}
